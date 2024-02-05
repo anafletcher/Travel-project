@@ -1,10 +1,14 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #272044;
+  background: #1b162f;
 }
 
 header {
-  background-image: url("../images/manzanilla-beach.jpg");
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(40, 40, 40, 0.4)
+    ),
+    url("../images/manzanilla-beach.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -48,24 +52,62 @@ header a {
   border-radius: 3px;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 footer {
-  text-align: center;
   margin-top: 20px;
-  color: whitesmoke;
+  padding: 100px 0;
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/scarlet-ibis.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  padding: 0;
 }
 
 footer a {
   text-decoration: none;
-  color: blue;
+  color: white;
+  opacity: 0.7;
 }
 
+footer a:hover {
+  color: grey;
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 10px;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
