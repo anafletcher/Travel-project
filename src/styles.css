@@ -136,11 +136,13 @@ footer li {
 footer a {
   text-decoration: none;
   color: white;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 footer a:hover {
-  color: grey;
+  color: white;
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .container {
@@ -151,11 +153,24 @@ footer a:hover {
 .img-responsive {
   width: 100%;
   display: block;
+  aspect-ratio: 15/9;
+}
+
+.tertiary-img-responsive {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+}
+
+.card-img-responsive {
+  display: block;
+  width: 100%;
   aspect-ratio: 12/11;
 }
 
-.img-responsive:hover {
+.card-img-responsive:hover {
   scale: 1.2;
+  transition: all 200ms ease-in-out;
 }
 
 .grid {
@@ -196,6 +211,7 @@ footer a:hover {
 
 .embed:hover {
   scale: 1.2;
+  transition: all 200ms ease-in-out;
 }
 
 .card {
@@ -228,6 +244,9 @@ footer a:hover {
   text-decoration: none;
   text-transform: uppercase;
 }
+.tertiary h3 {
+  margin-bottom: 30px;
+}
 
 @media (max-width: 960px) {
   header {
@@ -258,6 +277,12 @@ footer a:hover {
     display: none;
   }
   .embed {
+    aspect-ratio: 16/9;
+  }
+  .embed:hover {
+    scale: 1;
+  }
+  .tertiary-img-responsive {
     aspect-ratio: 16/9;
   }
 }
