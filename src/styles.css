@@ -67,7 +67,7 @@ section h2 {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 5px;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
   opacity: 0.4;
   text-transform: uppercase;
@@ -76,7 +76,7 @@ section h2 {
 section h3 {
   font-size: 40px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
 }
 
@@ -136,7 +136,7 @@ footer a:hover {
 
 .grid {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 40px;
 }
 
 .grid-2-columns {
@@ -146,6 +146,15 @@ footer a:hover {
 .grid-3-columns-first-narrow {
   color: white;
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.history-link {
+  text-decoration: none;
+  opacity: 0.4;
+}
+
+.history-link:hover {
+  opacity: 0.9;
 }
 
 @media (max-width: 960px) {
