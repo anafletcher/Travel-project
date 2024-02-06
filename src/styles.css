@@ -149,9 +149,13 @@ footer a:hover {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
-  aspect-ratio: 4/3;
+  aspect-ratio: 12/11;
+}
+
+.img-responsive:hover {
+  scale: 1.2;
 }
 
 .grid {
@@ -185,14 +189,22 @@ footer a:hover {
   text-align: center;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 12/11;
+}
+
+.embed:hover {
+  scale: 1.2;
+}
+
 .card {
   background: white;
   margin: 10px 0;
 }
 
-.card-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -241,5 +253,11 @@ footer a:hover {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
