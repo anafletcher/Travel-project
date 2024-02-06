@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #1b162f;
+  background: #181525;
 }
 
 header {
@@ -52,20 +52,49 @@ header a {
   border-radius: 3px;
 }
 
+main {
+  background: white;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
+  color: #272044;
+}
+
+section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+
+section h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  opacity: 0.7;
 }
 
 footer {
   margin-top: 20px;
-  padding: 100px 0;
   color: white;
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.8)
     ),
-    url("../images/scarlet-ibis.jpg");
+    url("../images/River-Falls-Trinidad.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.9;
@@ -101,10 +130,22 @@ footer a:hover {
   margin: 0 auto;
 }
 
+.img-responsive {
+  max-width: 100%;
+}
+
 .grid {
   display: grid;
+  grid-gap: 50px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-first-narrow {
+  color: white;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 10px;
 }
 
 @media (max-width: 960px) {
@@ -121,5 +162,15 @@ footer a:hover {
   }
   header h3 {
     font-size: 12px;
+  }
+  section {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
   }
 }
