@@ -142,7 +142,7 @@ footer a {
 footer a:hover {
   color: white;
   opacity: 1;
-  text-decoration: underline;
+  font-weight: 700;
 }
 
 .container {
@@ -160,17 +160,6 @@ footer a:hover {
   width: 100%;
   display: block;
   aspect-ratio: 1/1;
-}
-
-.card-img-responsive {
-  display: block;
-  width: 100%;
-  aspect-ratio: 12/11;
-}
-
-.card-img-responsive:hover {
-  scale: 1.2;
-  transition: all 200ms ease-in-out;
 }
 
 .grid {
@@ -211,7 +200,7 @@ footer a:hover {
 
 .embed:hover {
   scale: 1.2;
-  transition: all 200ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .card {
@@ -231,6 +220,17 @@ footer a:hover {
   padding: 30px;
 }
 
+.card-img-responsive {
+  display: block;
+  width: 100%;
+  aspect-ratio: 12/11;
+}
+
+.card-img-responsive:hover {
+  scale: 1.2;
+  transition: all 500ms ease-in-out;
+}
+
 .btn {
   display: block;
   font-size: 14px;
@@ -243,9 +243,30 @@ footer a:hover {
   padding: 16px 32px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: font-size 1s 1s;
 }
+
+.btn:hover {
+  font-size: 18px;
+}
+
 .tertiary h3 {
   margin-bottom: 30px;
+}
+
+.tertiary img {
+  transition: scale 1s ease-in-out;
+}
+
+.tertiary img:hover {
+  scale: 1.2;
+  box-shadow: 10px 3px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.video {
+  margin: 0 auto;
+  aspect-ratio: 4/3;
+  width: 100%;
 }
 
 @media (max-width: 960px) {
@@ -284,5 +305,15 @@ footer a:hover {
   }
   .tertiary-img-responsive {
     aspect-ratio: 16/9;
+  }
+  .tertiary img {
+    aspect-ratio: 4/3;
+  }
+  .tertiary img:hover {
+    scale: 1;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0);
+  }
+  .video {
+    aspect-ratio: 4/3;
   }
 }
