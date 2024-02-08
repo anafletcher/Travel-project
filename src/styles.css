@@ -4,11 +4,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(
-      rgba(20, 20, 20, 0.2),
-      rgba(40, 40, 40, 0.4)
-    ),
-    url("../images/manzanilla-beach.jpg");
+  background-image: url("../images/manzanilla-beach.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -243,7 +239,7 @@ footer a:hover {
   padding: 16px 32px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: font-size 1s 1s;
+  transition: font-size 200ms 200ms ease-in;
 }
 
 .btn:hover {
